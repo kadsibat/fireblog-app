@@ -44,7 +44,7 @@ function Login() {
     //       email:${values.email}
     //       `
     //   )
-    kullaniciGiris(values.email, values.password, navigate);
+    kullaniciGiris(values.email, values.password, navigate("/"));
     resetForm();
   };
   console.log(initialValues);
