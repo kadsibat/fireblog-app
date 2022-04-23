@@ -1,4 +1,4 @@
-// import auth from "./firebase"
+import auth from "./firebase"
 
 import { getDatabase,ref,set,push, onValue,remove, update} from "firebase/database";
 import { useEffect, useState } from "react";
