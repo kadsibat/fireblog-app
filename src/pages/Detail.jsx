@@ -20,10 +20,12 @@ function Detail() {
   const location = useLocation();
   const [detail, setDetail] = useState({});
   const navigate = useNavigate()
+
+  
 console.log(detail)
   useEffect(() => {
     setDetail(location.state.item);
-  }, []);
+  }, [location]);
   console.log(detail);
 
   const DeleteClick = () =>{

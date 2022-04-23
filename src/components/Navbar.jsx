@@ -19,7 +19,7 @@ export default function Navbar() {
   console.log("sibel",user);
 
   const navigate = useNavigate();
-  const [auth, setAuth] = React.useState(true);
+  // const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   // const handleChange = (event) => {
@@ -32,6 +32,12 @@ export default function Navbar() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+const handleCikis=() =>{
+    setAnchorEl(null);
+  cikis()
+  
+}
 
   const handleLogin = () => {
     setAnchorEl(null);   //tıklandıgında acık kalmamsını saglıyor
@@ -85,7 +91,7 @@ export default function Navbar() {
           <i>{"<SibelKayahan/>"}</i>
         <span>BLOG</span>
           </Typography>
-          {auth && (
+          
             <div>
               <IconButton
                 size="large"
@@ -131,10 +137,10 @@ export default function Navbar() {
               >
                 <MenuItem onClick={handleProfile}>Profile</MenuItem>
                 <MenuItem onClick={handleNew}>New</MenuItem>
-                 <MenuItem onClick={()=>cikis()}>Logout</MenuItem></Menu>)}
+                 <MenuItem onClick={handleCikis}>Logout</MenuItem></Menu>)}
              
             </div>
-          )}
+          
         </Toolbar>
       </AppBar>
     </Box>
