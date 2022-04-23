@@ -15,6 +15,7 @@ import google from "../assets/google.png";
 // import { Typography,Link, Container } from "@mui/material";
 
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import Toastify from "../helpers/toast";
 
 
 const myValidationSchema = Yup.object({
@@ -58,9 +59,9 @@ function Login() {
         console.log(user)
         navigate("/")
       }).catch((err) => {
-        alert(err.message)
+        Toastify(err.message)
       })
-    }catch(err) {alert(err.message)}
+    }catch(err) {Toastify(err.message)}
   }
   return (
     <div className="login">
