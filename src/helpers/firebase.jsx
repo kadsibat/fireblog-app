@@ -5,12 +5,6 @@ import Toastify from "./toast";
 // TODO: Replace the following with your app's Firebase project configuration
 // See: https://firebase.google.com/docs/web/learn-more#config-object
 const firebaseConfig = {
-    // apiKey: "AIzaSyA8uLqEHAe4242TNmiU4Bt6MkhlutqGZcw",
-    // authDomain: "fire-blog-65074.firebaseapp.com",
-    // projectId: "fire-blog-65074",
-    // storageBucket: "fire-blog-65074.appspot.com",
-    // messagingSenderId: "460997102516",
-    // appId: "1:460997102516:web:9208e971e47ecd464f80e1"
 
     apiKey: process.env.REACT_APP_apiKey,
   authDomain: process.env.REACT_APP_authDomain,
